@@ -1,0 +1,11 @@
+1. Check if the browser supports the Geolocation API.
+
+2. Set Options for high Accuracy and a 5 sec Timeout and no caching. Use Watch Position to Track the User's Location continuosly. Emit the Latitutde and Longitide via a socket with "Send-Location".Log any errors to the console.
+
+3. Initialize a map centered at the coordinates (0,0) with a zoom level of 15 using Leaflet.js. Add an OpenStreetMap title to the map.
+
+4. Create an empty object markers.
+
+5. When Recieving loaction data via the socket, extract ID, latitide, longitude and center the map on the new Coordinates.
+
+6. If a marker for the ID already Exists, Update its position, otherwise create a new marker at the given coordinates, and add it to the map. When a user Disconnects, remove their marker from the map and delete it from Markers.
