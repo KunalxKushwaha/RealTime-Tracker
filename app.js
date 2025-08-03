@@ -16,10 +16,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 io.on("connection", function(socket) {
     socket.on('send-location', (data) => {
-        io.emit('recieve-location', {id : socket.id, ...data});
+        io.emit('recieve-location', {id: socket.id, ...data});
     });
     socket.on('disconnect', () => {
-        io.emit('user-disconnects', {id : socket.id, latitude: null, longitude: null});
+        io.emit('user-disconnects',socket.id);
     });
 });
 

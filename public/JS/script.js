@@ -8,8 +8,9 @@ if(navigator.geolocation) {
     },
     {
         enableHighAccuracy: true,
-        maximumAge: 0,
-        timeout: 5000,
+        timeout: 1000,
+        maximumAge: 0
+        
     }
     
 )
@@ -20,21 +21,21 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: "OpenStreetMap"
  }).addTo(map);
 
-const marker = {};
+const markers = {};
 
 socket.on('recieve-location', (data) => {
     cost = {id, latitude, longitude} = data;
     map.setView([latitude, longitude]);
-    if(marker[id]) {
-        marker[id].setLatLng([latitude, longitude]);
+    if(markers[id]) {
+        markers[id].setLatLng([latitude, longitude]);
     } else {
-        marker[id] = L.marker([latitude, longitude]).addTo(map);
+        markers[id] = L.marker([latitude, longitude]).addTo(map);
     }
 });
 
 socket.on('user-disconnects', (id) => {
-    if(marker[id]) {
-        map.removeLayer(marker[id]);
-        delete marker[id];
+    if(markers[id]) {
+        map.removeLayer(markers[id]);
+        delete markers[id];
     }
 });
