@@ -43,11 +43,9 @@ http://localhost:3000
 
 ## 🧩 Project Structure
 pgsql
-Copy
-Edit
 📁 realtime-location-tracker
 ├── public/
-│   ├── index.html
+│   ├── index.ejs
 │   ├── JS/
 │   │   └── script.js        # Your client-side logic (shown above)
 ├── server/
