@@ -25,8 +25,8 @@ A simple real-time location tracker built using **Socket.IO**, **Leaflet.js**, a
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/realtime-location-tracker.git
-   cd realtime-location-tracker
+   git clone https://github.com/KunalxKushwaha/RealTime-Tracker.git
+   cd RealTime-Tracker
 
 **Install server dependencies**
 
@@ -36,7 +36,7 @@ npm install
 
 node index.js
 
-```bash
+
 
 ## Open the app in browser
 http://localhost:3000
