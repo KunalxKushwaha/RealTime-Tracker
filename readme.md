@@ -66,19 +66,19 @@ Maintains a marker for each connected user
 
 Removes marker on user-disconnects event
 
-🔐 Permissions
+## 🔐 Permissions
 Ensure your browser allows location access, or the geolocation API will not function.
 
-🧪 Example Use Case
+## 🧪 Example Use Case
 Personal location sharing with friends
 
 Tracking delivery agents or employees
 
 Real-time event crowd tracking
 
-📝 License
+## 📝 License
 This project is licensed under the MIT License — feel free to use, modify, and distribute.
 
-🙋‍♂️ Author
-Kunal Kushwaha
+ ## 🙋‍♂️ Author - Kunal Kushwaha✒️
+
 Feel free to connect with me for collaboration or feedback!
