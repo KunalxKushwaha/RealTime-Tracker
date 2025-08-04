@@ -27,25 +27,19 @@ A simple real-time location tracker built using **Socket.IO**, **Leaflet.js**, a
    ```bash
    git clone https://github.com/your-username/realtime-location-tracker.git
    cd realtime-location-tracker
-Install server dependencies
 
-bash
-Copy
-Edit
+## Install server dependencies
+
 npm install
-Start the server
 
-bash
-Copy
-Edit
+## Start the server
+
 node index.js
-Open the app in browser
 
-arduino
-Copy
-Edit
+## Open the app in browser
 http://localhost:3000
-🧩 Project Structure
+
+## 🧩 Project Structure
 pgsql
 Copy
 Edit
@@ -58,7 +52,8 @@ Edit
 │   └── index.js             # Node.js backend with Socket.IO
 ├── package.json
 └── README.md
-⚙️ Client-Side Script Summary
+
+## ⚙️ Client-Side Script Summary
 Requests user location using navigator.geolocation.watchPosition
 
 Emits send-location events to server with latitude and longitude
