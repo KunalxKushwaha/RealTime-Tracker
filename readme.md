@@ -8,7 +8,7 @@ A simple real-time location tracker built using **Socket.IO**, **Leaflet.js**, a
 
 - 🌍 Real-time location sharing.
 - 📡 Uses HTML5 Geolocation API.
-- 🗺️ Interactive map with Leaflet.js (OpenStreetMap tiles)
+- 🗺️ Interactive map with Leaflet.js. (OpenStreetMap tiles)
 - 🔌 WebSocket-based communication with Socket.IO
 - 🔴 Automatic marker removal on user disconnect
 
